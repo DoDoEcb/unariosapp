@@ -1,0 +1,55 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+            Edit Profile <span class="text-red">Save</span>
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <div class="add-img">
+        <div class="img-box">
+            <img src="assets/imgs/man2.png">
+        </div>
+        <ion-icon name="md-camera" class="text-white"></ion-icon>
+    </div>
+
+    <ion-list no-lines>
+        <ion-item>
+            <ion-label padding-right class="text-black">FUll Name</ion-label>
+            <ion-input type="text" placeholder="Sam Smith" text-right></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label padding-right class="text-black">Birthdate</ion-label>
+            <ion-input type="text" text-right placeholder="30 Dec, 1990"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label padding-right class="text-black">Gender</ion-label>
+            <ion-select [(ngModel)]="gender">
+                <ion-option value="nes">Male</ion-option>
+                <ion-option value="n64">Female</ion-option>
+            </ion-select>
+            <ion-icon name="ios-arrow-down-outline" item-end></ion-icon>
+        </ion-item>
+        <ion-item>
+            <ion-label padding-right class="text-black">Interest in</ion-label>
+            <ion-select [(ngModel)]="interest">
+                <ion-option value="nes">Female</ion-option>
+                <ion-option value="n64">Male</ion-option>
+            </ion-select>
+            <ion-icon name="ios-arrow-down-outline" item-end></ion-icon>
+        </ion-item>
+        <ion-item>
+            <ion-label padding-right class="text-black">Short bio</ion-label>
+            <ion-textarea class="short_dio" type="text" placeholder="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been"></ion-textarea>
+        </ion-item>
+        <ion-item>
+            <ion-label padding-right class="text-black" stacked>Work</ion-label>
+            <ion-input type="text" placeholder="Senior Designer at Rainbow tech labs." style="margin-left: 0;"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label padding-right class="text-black">Hobbies</ion-label>
+            <ion-textarea type="text" placeholder="Photography Painting rock climbing traveling"></ion-textarea>
+        </ion-item>
+    </ion-list>
+</ion-content>
